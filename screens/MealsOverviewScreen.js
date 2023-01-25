@@ -22,6 +22,7 @@ const MealsOverviewScreen = ({ route, navigation }) => {
 
   const renderMealItem = (itemData) => {
     const props = {
+      id: itemData.item.id,
       title: itemData.item.title,
       imageUrl: itemData.item.imageUrl,
       duration: itemData.item.duration,
